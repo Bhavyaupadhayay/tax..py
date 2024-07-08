@@ -1,0 +1,34 @@
+#creating a program to calculate that in which salary range you are and how much tax you have to pay
+print("hello user, this program is designed to inform you in which tax range you are.")
+while True:
+    try:
+        x = float(input("enter you anual salary (in lakhs):"))
+        break
+    except ValueError:
+        print("only numeric value is accepted")
+
+if x >= 1200000:
+    print("you are in 1st catagory , SO you have to 30% of total tax from your income  which is :")
+    a = (30*x)/100
+    print(a)
+    print("RS")
+elif x < 1200000 and x>=1000000:
+    print("you are in 2nd catagory, SO you have to pay 28% of total tax from your income which is :")
+    b = (28*x)/100
+    print(b)
+    print("RS")
+elif x < 1000000 and x>=700000:
+    print("you are in 3rd catagory, SO you have to pay 24% of total tax from your income which is :")
+    c = (24*x)/100
+    print(c)
+    print("RS")
+elif x <700000 and x>=500000:
+    print(" you are in 4th catagory, SO you have to pay 18% of total tax from your income which is :")
+    d = (18*x)/100
+    print(d)
+    print("RS")
+else:
+    print("you are in 5th catagory ,so there will be no tax on your income which is :")
+    print("0 RS")
+print("THANKYOU FOR VISITING")
+        
